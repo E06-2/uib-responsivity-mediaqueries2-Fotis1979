@@ -1,8 +1,159 @@
+
 main {
-    font-family: sans-serif;
     font-size: 15px;
+    font-family: sans-serif;
 }
 
-li {
-    margin: 10px;
+li{
+    margin:10px;
+}
+
+  /* --------------- Mobile ---------------------- */
+
+@media screen and (max-width: 500px){
+
+    body{
+        background-color: white; 
+    }
+
+    main{
+        background-color: white;
+        color: black;
+        font-size: 25px;
+    }
+
+    main ol li::first-letter{
+        font-size: 25px;
+        color: black;
+        font-family:'Arial';
+    }
+
+    h1, p{
+        text-align: center;
+       
+    }
+
+    p{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+   
+    ol{
+        padding-left: 75px;
+        padding-right: 35px;
+        margin-top: 55px;
+       }
+
+       li{
+        font-family:'Franklin Gothic Medium';  
+        font-size: 25px; 
+        padding:3px;
+       }
+}
+    
+/* ------------------ Tablet ----------------------- */
+
+
+@media screen and (max-width: 940px) and (min-width: 501px){
+   
+    body{
+        background-color: lightpink; 
+    }
+
+    main{
+        background-color: lightpink;
+        color: black;
+        margin: 0;
+        font-size: 25px;
+    }
+    
+    main ol li::first-letter{
+        font-size: 30px;
+      color: black;
+        font-family:'Impact';
+    }
+    
+    h1{
+        text-align: center;    
+        margin-bottom: 10px;
+    }
+    
+    ol{
+        padding-left: 75px;
+        padding-right: 25px;
+       }
+
+    p{
+        font-size: xx-large;
+        font-family: cursive;
+        text-align: center;
+        margin-top: 1px;
+        padding: 10px;
+       }
+       
+    li{ 
+        padding: 5px ;
+        font-family: Impact;  
+        font-size: 30px; 
+    }
+   }
+   
+    
+
+/* ------------------- Desktop ---------------------- */
+
+
+ @media screen and (max-width: 1920px) and (min-width: 941px){
+
+    body{
+        background-color: wheat;
+    }
+    
+    main{
+        font-size: 25px;
+        background-color: wheat;
+        margin:35px;
+    }
+    
+    li {
+        margin: 10px; 
+        color: tomato;
+    }
+    
+    main ol li::first-letter{
+        font-size: 35px;
+        color: rgba(126, 64, 184, 0.7);
+        font-family: 'Lobster', cursive;
+    }
+}
+    
+/* ------------------- Print ----------------------- */
+
+
+@page {
+    size:portrait;
+}
+
+@media print{
+    h1,p{
+        text-align: center;
+        font-size: x-large;        
+    }
+    
+    h1{
+        margin-top: 80px;
+    }
+
+    ol{
+        margin: 40px;
+    }
+
+    li{
+        font-size: 25px;
+    }
+    
+    p{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
 }
